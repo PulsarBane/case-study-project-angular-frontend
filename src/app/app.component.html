@@ -1,0 +1,5 @@
+<div class="image">
+<header-main *ngIf="!retrieveIsUserLoggedIn()"></header-main>
+<header-user *ngIf="retrieveIsUserLoggedIn()"></header-user>
+<router-outlet></router-outlet>
+</div>

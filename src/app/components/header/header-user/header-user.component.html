@@ -1,0 +1,59 @@
+<nav class="navbar navbar-dark navbar-expand p-0 bg-dark">
+    <div class="container-fluid">
+        <ul class="navbar-nav d-none d-md-flex mr-auto">
+            <li class="nav-item mt-1">
+                <div class="d-flex flex-row">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjdU9CTi6jnS2dGoTCP48AhRntH9SXQnFtTg&usqp=CAU" class="rounded-circle" width="30">
+                </div>
+            </li> 
+            <li class="nav-item">
+                <a (click)="display()" class="nav-link d-flex align-items-center" data-abc="true">
+                <span>Products</span><i class='bx bxs-chevron-down'></i></a>
+            </li> 
+            <li class="nav-item mt-1">
+                <div class="d-flex flex-row">
+                    <img src="https://t3.ftcdn.net/jpg/05/14/18/46/360_F_514184651_W5rVCabKKRH6H3mVb62jYWfuXio8c8si.jpg"
+                        class="rounded-circle" width="30">
+                </div>
+            </li>
+            <li class="nav-item">
+                <a (click)="profile()" class="nav-link d-flex align-items-center" data-abc="true">
+                <span>User Profile</span><i class='bx bxs-chevron-down'></i></a>
+            </li>
+            <li class="nav-item mt-1">
+                <div class="d-flex flex-row">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWAWahvENDdYOsZySu74exlG4nULUxgSugL0nj7oO7kA&s" class="rounded-circle" width="30">
+                </div>
+            </li> 
+            <li class="nav-item">
+                <a (click)="history()" class="nav-link d-flex align-items-center" data-abc="true">
+                    <span>Purchase History</span><i class='bx bxs-chevron-down'></i></a>
+            </li>
+            <li class="nav-item mt-1">
+                <div class="d-flex flex-row">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWAWahvENDdYOsZySu74exlG4nULUxgSugL0nj7oO7kA&s" class="rounded-circle" width="30">
+                </div>
+            </li> 
+            <li class="nav-item">
+                <a (click)="cart()" class="nav-link d-flex align-items-center" data-abc="true">
+                <span>Cart</span><i class='bx bxs-chevron-down'></i></a>
+            </li> 
+        </ul>
+        <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item">
+                <div class="d-flex flex-row">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGl-SJkExNdKCMrPwK52x8g1jbABlXwULs6w&usqp=CAU"
+                        class="rounded-circle" width="30">
+                </div>
+            </li>
+            <li class="nav-item">
+                <a (click)="logout()" class="nav-link d-flex align-items-center" data-abc="true"><span>Logout</span><i
+                        class='bx bxs-chevron-down'></i></a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="cart" class="nav-link d-flex align-items-center" data-abc="true"><span></span><i
+                        class='bx bxs-chevron-down'></i></a>
+        </ul> <!-- list-inline //  -->
+    </div> <!-- navbar-collapse .// -->
+    <!-- container //  -->
+</nav> <!-- header-top-light.// -->

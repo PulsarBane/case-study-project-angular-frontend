@@ -1,0 +1,29 @@
+<div class="wrapper rounded">
+    <nav class="navbar navbar-expand-lg navbar-dark dark d-lg-flex align-items-lg-start"> 
+        <a class="navbar-brand">History 
+            <p class="text-muted pl-1">Welcome to your transaction history</p> </a> 
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+    </nav>
+    <div class="table-responsive mt-3">
+        <table class="table table-dark table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Order Number</th>
+                    <th scope="col">User ID</th>
+                    <th scope="col">Date</th>
+                    <th scope="col" class="text-right">Order Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let eachOrder of previousOrders">
+                    <td scope="row">{{eachOrder.orderNo}}</td>
+                    <td><span class="fa fa-cc-visa"></span>{{eachOrder.userID}}</td>
+                    <td class="text-muted">{{eachOrder.orderDate}}</td>
+                    <td class="text-muted">complete</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

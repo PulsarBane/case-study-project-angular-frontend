@@ -1,0 +1,125 @@
+<p>user-register works!</p>
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+            
+              <form #myForm="ngForm" (ngSubmit)="addUser()">
+                <div class="mb-md-5 mt-md-4 pb-5">
+                  <h2 class="fw-bold mb-2 text-uppercase">REGISTER</h2>
+                  <p class="text-white-50 mb-5">Sign up today and take your performance to the next level!</p>
+    
+                  <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="typeUsername">Username</label>
+                    <input 
+                      type="text" 
+                      id="userName" 
+                      class="form-control form-control-lg"
+                      placeholder="Enter username"
+                      name="uName" 
+                      [(ngModel)]="newUser.username"
+                      #username="ngModel"
+                      required>
+                  <div class="text-danger small" *ngIf="!username.valid && username.touched">
+                      Username is required!
+                  </div>
+                  </div>
+    
+                  <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="typePasswordX">Password</label>
+                  <input 
+                      type="text" 
+                      id="typePasswordX" 
+                      class="form-control form-control-lg"
+                      placeholder="Enter password"
+                      name="uPasword" 
+                      [(ngModel)]="newUser.password"
+                      #password="ngModel"
+                      required>
+                  <div class="text-danger small" *ngIf="!password.valid && password.touched">
+                      Password is required!
+                  </div>
+                  </div>
+  
+                  <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typePasswordX">Firstname</label>
+                      <input 
+                      type="text" 
+                      id="typePasswordX" 
+                      class="form-control form-control-lg"
+                      placeholder="Enter firstname"
+                      name="uFirstName" 
+                      [(ngModel)]="newUser.firstname"
+                      #firstname="ngModel"
+                      required>
+                  <div class="text-danger small" *ngIf="!firstname.valid && firstname.touched">
+                      Firstname is required!
+                  </div>
+                  </div>
+  
+                  <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typePasswordX">Lastname</label>
+                      <input 
+                      type="text" 
+                      id="typePasswordX" 
+                      class="form-control form-control-lg"
+                      placeholder="Enter lastname"
+                      name="uLastName" 
+                      [(ngModel)]="newUser.lastname"
+                      #lastname="ngModel"
+                      required>
+                  <div class="text-danger small" *ngIf="!lastname.valid && lastname.touched">
+                      Lastname is required!
+                  </div>
+                  </div>
+  
+                  
+                  <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typePasswordX">Email</label>
+                      <input 
+                      type="text" 
+                      id="typePasswordX" 
+                      class="form-control form-control-lg"
+                      placeholder="Enter email"
+                      name="uEmail" 
+                      [(ngModel)]="newUser.email"
+                      #email="ngModel"
+                      required>
+                  <div class="text-danger small" *ngIf="!email.valid && email.touched">
+                        Email is required!
+                   </div>
+                   </div>
+
+                   <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="typePasswordX">UserType</label>
+                    <input 
+                    type="text" 
+                    id="typePasswordX" 
+                    class="form-control form-control-lg"
+                    placeholder="Enter usertype"
+                    name="uEmail" 
+                    [(ngModel)]="newUser.usertype"
+                    #usertype="ngModel"
+                    required>
+                  <div class="text-danger small" *ngIf="!usertype.valid && usertype.touched">
+                      UserType is required!
+                 </div>
+                 </div>
+  
+                  <button 
+                  class="btn btn-outline-light btn-lg px-5" 
+                  type="submit"
+                  [disabled]="!myForm.valid"
+                  >Create Account</button>
+                </div>
+              </form>
+             <div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

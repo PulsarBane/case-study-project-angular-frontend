@@ -1,0 +1,18 @@
+#home {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    margin: auto auto;
+    background-color: #080808;
+    color:#fff;
+    white-space:nowrap;
+}
+
+.bgimg-1 {
+    background-image: url('https://img.freepik.com/free-photo/original-brown-leather-texture-background_24972-1605.jpg');
+    min-height: 5%;
+    
+}
+  
